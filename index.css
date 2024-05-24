@@ -1,0 +1,90 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+}
+
+@font-face {
+    font-family: 'inter';
+    font-weight: 400;
+    src: url('assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'inter';
+    font-weight: 700;
+    src: url('assets/fonts/static/Inter-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'inter';
+    font-weight: 600;
+    src: url('assets/fonts/static/Inter-SemiBold.ttf') format('truetype');
+}
+
+body{
+    font-family: 'inter','roboto';
+    background-color: var(--Off-Black);
+}
+.fw-700{
+    font-family: 'inter','roboto';
+    font-weight: 700;
+}
+.fw-600{
+    font-family: 'inter','roboto';
+    font-weight: 600;
+}
+.div-head{
+    margin-top: 2rem;
+}
+
+.main {
+    display: grid;
+    place-items: center;
+    padding: 0 1rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    max-width: 30rem;
+    background-color: var(--Dark-Grey);
+    border-radius: 1.5rem;
+    margin: 2rem 0;
+}
+
+div>img {
+    border-radius: 50%;
+}
+.white{
+    color: var(--White);
+}
+.green{
+    color: var(--Green);
+}
+.margin{
+    margin-top: 10px;
+}
+
+.link {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--Grey);
+    padding: 1rem 0;
+    width: 100%;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
